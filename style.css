@@ -10,6 +10,9 @@
 html{
     overflow-x: hidden;
 }
+/* html::-webkit-scrollbar{
+    display: none;
+} */
 
 * {
   margin: 0;
@@ -21,7 +24,8 @@ html{
 
 body {
   font-family: "Poppins", sans-serif;
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
+  height: 400vh;
 }
 
 .beku {
@@ -59,7 +63,19 @@ li {
 }
 
 .btn:hover {
-  transform: scale(1.1);
+  transform: scale(1.07);
+}
+
+/* for text primary box */
+.text-primary {
+    border: 1px solid var(--blue);
+    text-align: center;
+    width: max-content;
+    font-size: .8rem;
+    padding: .4rem;
+    color: var(--blue);
+    font-weight: 500;
+    border-radius: .5rem;
 }
 
 /* nav */
@@ -193,7 +209,6 @@ nav ul .close-menu {
   width: 100%;
   padding: 3rem;
   gap: 4.5rem;
-  /* flex-wrap: wrap; */
 }
 
 .content-1 ul li {
@@ -229,6 +244,132 @@ nav ul .close-menu {
   width: 100%;
   font-size: 0.9rem;
 }
+
+
+/* content-2 */
+.content-2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+    width: 100%;
+    padding: 7% 2rem;
+    background-color: var(--white-2);
+  }
+
+.content-2 > .header{
+    width: 100%;
+    text-align: center;
+}
+.content-2 > .header h2 {
+    font-size: 2.5rem;
+}
+.content-2 > .header p{
+    font-size: .9rem;
+}
+.content-2 .content{
+    width: 100%;
+    display: flex;
+    padding: 3rem 4rem;
+    justify-content: space-around;
+}
+
+.content-2 .content .card{
+    width: 17rem;
+    background-color: var(--white);
+    box-shadow: 0 0 12px -5px black;
+    border-radius: 1rem;
+    padding: 1.5rem 1rem;
+}
+
+.content-2 .content .card .header{
+    height: 14rem;
+    position: relative;
+    border-bottom: 1px solid black;
+}
+.content-2 .content .card .header .txt{
+    width: 100%;
+    text-align: start;
+    background-color: var(--blue);
+    color: var(--white);
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+.content-2 .content .card .header .text-2{
+    font-size: 1.6rem;
+    font-weight: 500;
+}
+.content-2 .content .card .header .text-1{
+    font-size: .9rem;
+}
+
+.content-2 .content .card .content-card{
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    padding-top: 1.4rem;
+    height: 20rem;
+}
+
+.content-2 .content .card .content-card .text-field{
+    display: flex;
+    justify-content: center;
+    gap: .3rem;
+
+}
+.content-2 .content .card .content-card p {
+    font-size: .9rem;
+    display: inline;
+    width: 100%;
+}
+
+.content-2 .content .card  .content-end{
+    width: 100%;
+}
+.content-2 .content .card .content-end button{
+    width: 100%;
+}
+
+.content-2 .content .card .content-end a {
+    display: inline-block;
+    color: var(--black);
+    text-decoration: underline;
+    font-size:.7rem ;
+    margin-top: 1rem;
+}
+.content-2 .content .card .content-end p{
+    font-size:.7rem ;
+
+}
+
+/* box diskon */
+
+.content-2 .box-promosi{
+  width: 60%;
+  /* min-width: 100%; */
+  background-color: var(--white);
+  box-shadow: 0 0 12px -5px black;
+  border-radius: 1rem;
+  padding: 1.5rem 1rem;
+  display: flex;
+  align-items: center;
+}
+
+.content-2 .box-promosi p {
+  font-size: 1.5rem;
+}
+
+.content-2 .box-promosi button{
+  background: transparent;
+  border: 1px solid var(--black);
+  color: var(--black);
+  height: max-content;
+}
+
+
+
+
+
 
 /* for laptop */
 @media (max-width: 1000px) {
@@ -317,6 +458,36 @@ nav ul .close-menu {
   .content-1 ul li .text {
     text-align: start;
   }
+
+  /* content-2 */
+  .content-2 .content{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 4rem 2rem;
+    gap: 1rem;
+    
+  }
+
+  .content-2 .content .card{
+    width: 33rem;
+    padding: 1.5rem;
+  }
+
+  .content-2 .content .card .header{
+    height: max-content;
+    padding: 1rem 0 ;
+  }
+
+  .content-2 .content .card .content-card{
+    height: max-content;
+    padding: 1rem 0;
+  }
+
+  .content-2 .box-promosi{
+    min-width: 100%;
+  }
+
 }
 
 /* for tab */
@@ -368,6 +539,14 @@ nav ul .close-menu {
   .content-1 ul li .text p:nth-child(2) {
     font-size: 1rem;
   }
+
+  /* content-2 */
+
+  .content-2 .box-promosi{
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
 }
 
 /* for mobile */
@@ -395,4 +574,14 @@ nav ul .close-menu {
     width: 8rem;
     height: 8rem;
   }
+
+  /* content-2 */
+  .content-2 .content{
+    padding: 4rem 0;
+  }
+  .content-2 .content .card{
+    width: 100%;
+  }
+
+
 }
