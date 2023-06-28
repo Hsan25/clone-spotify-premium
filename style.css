@@ -4,11 +4,11 @@
   --green: #1ed760;
   --white: #fff;
   --gray: #878787;
-  --white-2:#eeeeee;
+  --white-2: #eeeeee;
 }
 
-html{
-    overflow-x: hidden;
+html {
+  overflow-x: hidden;
 }
 /* html::-webkit-scrollbar{
     display: none;
@@ -68,14 +68,14 @@ li {
 
 /* for text primary box */
 .text-primary {
-    border: 1px solid var(--blue);
-    text-align: center;
-    width: max-content;
-    font-size: .8rem;
-    padding: .4rem;
-    color: var(--blue);
-    font-weight: 500;
-    border-radius: .5rem;
+  border: 1px solid var(--blue);
+  text-align: center;
+  width: max-content;
+  font-size: .8rem;
+  padding: 0.4rem;
+  color: var(--blue);
+  font-weight: 500;
+  border-radius: 0.5rem;
 }
 
 /* nav */
@@ -245,106 +245,103 @@ nav ul .close-menu {
   font-size: 0.9rem;
 }
 
-
 /* content-2 */
 .content-2 {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-    width: 100%;
-    padding: 7% 2rem;
-    background-color: var(--white-2);
-  }
+  width: 100%;
+  padding: 7% 2rem;
+  background-color: var(--white-2);
+}
 
-.content-2 > .header{
-    width: 100%;
-    text-align: center;
+.content-2 > .header {
+  width: 100%;
+  text-align: center;
 }
 .content-2 > .header h2 {
-    font-size: 2.5rem;
+  font-size: 2.5rem;
 }
-.content-2 > .header p{
-    font-size: .9rem;
+.content-2 > .header p {
+  font-size: 0.9rem;
 }
-.content-2 .content{
-    width: 100%;
-    display: flex;
-    padding: 3rem 4rem;
-    justify-content: space-around;
-}
-
-.content-2 .content .card{
-    width: 17rem;
-    background-color: var(--white);
-    box-shadow: 0 0 12px -5px black;
-    border-radius: 1rem;
-    padding: 1.5rem 1rem;
+.content-2 .content {
+  width: 100%;
+  display: flex;
+  padding: 3rem 4rem;
+  justify-content: space-around;
 }
 
-.content-2 .content .card .header{
-    height: 14rem;
-    position: relative;
-    border-bottom: 1px solid black;
-}
-.content-2 .content .card .header .txt{
-    width: 100%;
-    text-align: start;
-    background-color: var(--blue);
-    color: var(--white);
-    margin-bottom: 1rem;
-    font-weight: 600;
-}
-.content-2 .content .card .header .text-2{
-    font-size: 1.6rem;
-    font-weight: 500;
-}
-.content-2 .content .card .header .text-1{
-    font-size: .9rem;
+.content-2 .content .card {
+  width: 17rem;
+  background-color: var(--white);
+  box-shadow: 0 0 12px -5px black;
+  border-radius: 1rem;
+  padding: 1.5rem 1rem;
 }
 
-.content-2 .content .card .content-card{
-    display: flex;
-    flex-direction: column;
-    gap: .5rem;
-    padding-top: 1.4rem;
-    height: 20rem;
+.content-2 .content .card .header {
+  height: 14rem;
+  position: relative;
+  border-bottom: 1px solid black;
+}
+.content-2 .content .card .header .txt {
+  width: 100%;
+  text-align: start;
+  background-color: var(--blue);
+  color: var(--white);
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+.content-2 .content .card .header .text-2 {
+  font-size: 1.6rem;
+  font-weight: 500;
+}
+.content-2 .content .card .header .text-1 {
+  font-size: 0.9rem;
 }
 
-.content-2 .content .card .content-card .text-field{
-    display: flex;
-    justify-content: center;
-    gap: .3rem;
+.content-2 .content .card .content-card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding-top: 1.4rem;
+  height: 20rem;
+}
 
+.content-2 .content .card .content-card .text-field {
+  display: flex;
+  justify-content: center;
+  gap: 0.3rem;
 }
 .content-2 .content .card .content-card p {
-    font-size: .9rem;
-    display: inline;
-    width: 100%;
+  font-size: 0.9rem;
+  display: inline;
+  width: 100%;
 }
 
-.content-2 .content .card  .content-end{
-    width: 100%;
+.content-2 .content .card .content-end {
+  width: 100%;
 }
-.content-2 .content .card .content-end button{
-    width: 100%;
+.content-2 .content .card .content-end button {
+  width: 100%;
 }
 
 .content-2 .content .card .content-end a {
-    display: inline-block;
-    color: var(--black);
-    text-decoration: underline;
-    font-size:.7rem ;
-    margin-top: 1rem;
+  display: inline-block;
+  color: var(--black);
+  text-decoration: underline;
+  font-size: 0.8rem;
+  margin-top: 1rem;
 }
-.content-2 .content .card .content-end p{
-    font-size:.7rem ;
-
+.content-2 .content .card .content-end p {
+  font-size: 0.8rem;
 }
 
 /* box diskon */
 
-.content-2 .box-promosi{
+.content-2 .box-promosi {
   width: 60%;
   /* min-width: 100%; */
   background-color: var(--white);
@@ -359,20 +356,20 @@ nav ul .close-menu {
   font-size: 1.5rem;
 }
 
-.content-2 .box-promosi button{
+.content-2 .box-promosi button {
   background: transparent;
   border: 1px solid var(--black);
   color: var(--black);
   height: max-content;
 }
 
-
-
-
-
-
 /* for laptop */
 @media (max-width: 1000px) {
+  .text-primary {
+    font-size: 1rem;
+  }
+
+  
   /* nav */
   html {
     font-size: 85%;
@@ -460,41 +457,51 @@ nav ul .close-menu {
   }
 
   /* content-2 */
-  .content-2 .content{
+  .content-2 .content {
     flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 4rem 2rem;
     gap: 1rem;
-    
   }
 
-  .content-2 .content .card{
+  .content-2 .content .card {
     width: 33rem;
     padding: 1.5rem;
   }
 
-  .content-2 .content .card .header{
-    height: max-content;
-    padding: 1rem 0 ;
-  }
-
-  .content-2 .content .card .content-card{
+  .content-2 .content .card .header {
     height: max-content;
     padding: 1rem 0;
   }
 
-  .content-2 .box-promosi{
+  .content-2 .content .card .content-card {
+    height: max-content;
+    padding: 1rem 0;
+  }
+
+  .content-2 .content .card .content-card p {
+    font-size: 1.1rem;
+  }
+  .content-2 .content .card .header .text-1{
+    font-size: 1rem;
+  }
+  .content-2 .box-promosi {
     min-width: 100%;
   }
 
+  .content-2 .content .card .content-end a,
+  .content-2 .content .card .content-end p  {
+    font-size: 0.9rem;
+
+  }
 }
 
 /* for tab */
 @media (max-width: 780px) {
   /* nav */
   html {
-    font-size: 75%;
+    font-size: 85%;
   }
   nav ul {
     width: 70%;
@@ -503,29 +510,29 @@ nav ul .close-menu {
     padding-left: 0;
   }
 
-  nav .logo .wrapper{
+  nav .logo .wrapper {
     width: 2.7rem;
     height: 2.7rem;
   }
 
   /* header */
-  .header-main .wrapper{
+  .header-main .wrapper {
     padding: 1rem;
   }
 
   /* header */
-  .header-main .wrapper .button{
+  .header-main .wrapper .button {
     display: flex;
     flex-direction: column;
-    gap: .5rem;
+    gap: 0.5rem;
   }
 
-  .header-main .wrapper .button button{
+  .header-main .wrapper .button button {
     width: 100%;
-    height: 4rem;
+    height: 3rem;
   }
   .header-main .wrapper p:nth-child(4) {
-    font-size: 1rem;
+    font-size: 0.8rem;
   }
 
   /* content 1 */
@@ -541,8 +548,11 @@ nav ul .close-menu {
   }
 
   /* content-2 */
+  .content-2 .content .card .content-card p {
+    font-size: 1.1rem;
+  }
 
-  .content-2 .box-promosi{
+  .content-2 .box-promosi {
     flex-direction: column;
     align-items: flex-start;
     gap: 1rem;
@@ -551,10 +561,10 @@ nav ul .close-menu {
 
 /* for mobile */
 
-@media (max-width: 500px) {
+@media (max-width: 580px) {
   /* nav */
   html {
-    font-size: 68%;
+    font-size: 76%;
   }
   nav ul {
     width: 100%;
@@ -562,26 +572,42 @@ nav ul .close-menu {
 
   /* headeer */
   /* header */
-  .header-main .wrapper{
+  .header-main .wrapper p:nth-child(1) {
+    font-size: 1.9rem;
+  }
+  .header-main .wrapper {
     padding: 0;
+  }
+  .header-main .wrapper .button button {
+    height: 3rem;
   }
 
   /* content 1 */
   .content-1 {
     padding: 7% 0;
   }
+  .content-1 h2,
+  .content-2 > .header h2 {
+    font-size: 2rem;
+  }
   .content-1 ul li .img-content-1 {
-    width: 8rem;
-    height: 8rem;
+    width: 7rem;
+    height: 7rem;
   }
 
   /* content-2 */
-  .content-2 .content{
+  .content-2 .content {
     padding: 4rem 0;
   }
-  .content-2 .content .card{
-    width: 100%;
+
+  .content-2 .content .card .header .text-2{
+    font-size: 2rem;
   }
 
-
+  .content-2 .content .card .content-card p {
+    font-size: 1.2rem;
+  }
+  .content-2 .content .card {
+    width: 100%;
+  }
 }
