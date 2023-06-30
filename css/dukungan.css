@@ -1,0 +1,251 @@
+:root {
+  --black: #000000;
+  --dark: #222326;
+  --dark-2: #121212;
+  --blue: #1d75de;
+  --green: #1ed760;
+  --white: #fff;
+  --gray: #878787;
+  --gray-1:#2a2a2a;
+  --white-2: #eeeeee;
+}
+
+html {
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: none;
+  outline: none;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
+
+}
+
+.beku {
+  overflow: hidden;
+}
+
+/* clear */
+a {
+  text-decoration: none;
+  color: var(--white);
+}
+
+li {
+  list-style: none;
+}
+
+/* for btn -primary */
+.btn-primary {
+  width: max-content;
+  padding: 0.8rem 1.5rem;
+  background-color: var(--black);
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  cursor: pointer;
+  border-radius: 2rem;
+  color: var(--white);
+  font-weight: 600;
+  font-size: 1rem;
+  text-transform: uppercase;
+}
+
+.transparent {
+  background: transparent;
+  border: 2px solid white;
+}
+
+.btn:hover {
+  transform: scale(1.07);
+}
+
+.bg {
+  width: 100%;
+  height: max-content;
+  background: linear-gradient(
+    174deg,
+    rgba(30, 215, 95),
+    rgba(0, 0, 0, 1) 23%
+  );
+    padding-bottom: 6rem ;
+}
+
+nav {
+  background: transparent;
+}
+
+/* content-1 */
+
+.content-satu {
+  width: 640px;
+  margin: 2rem auto 0;
+  height: 600px;
+  color: var(--white);
+}
+
+.content-satu .header p {
+  color: var(--gray);
+  font-size: 1.2rem;
+  text-transform: uppercase;
+}
+
+.content-satu .header h1 {
+  font-size: 4rem;
+}
+
+.content-satu .header .text-header {
+  margin: 2rem 0 2rem;
+  font-size: 1.2rem;
+  color: var(--gray);
+}
+
+.content-satu .header .text-header a {
+  text-decoration: underline;
+  font-size: 1.2rem;
+  color: white;
+}
+
+.search-box {
+  background-color: var(--white);
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 0 1rem;
+}
+
+.search-box input {
+  background: transparent;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.2rem;
+  width: 100%;
+  padding: .7rem 1rem ;
+}
+
+.content-satu .content {
+  min-width: 100%;
+  margin-top: 2rem;
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  position: relative;
+}
+
+.content-satu .content .content-card {
+  background-color: rgb(175, 40, 150);
+  width: calc(100% / 3 - 0.7rem);
+  position: relative;
+  height: 92px;
+  overflow: hidden;
+  border-radius: 6px;
+  padding: 1rem;
+}
+
+.content-satu .content .content-card img {
+  position: absolute;
+  bottom: 0;
+  right: -20px;
+  transform: rotate(30deg);
+}
+
+.content-satu .content .content-card p {
+  width: 70%;
+  font-size: 1.2rem;
+  text-transform: capitalize;
+  position: relative;
+}
+
+
+/* content dua */
+
+.content-dua{
+    width: 100%;
+    background-color: var(--gray-1);
+    padding: 2rem 1rem;
+    position: relative;
+    top: 100%;
+}
+
+.content-dua .wrapper{
+    max-width: 680px;
+    margin: 0 auto;
+}
+
+.content-dua .wrapper .header h2{
+    color: var(--white);
+}
+
+.content-dua .wrapper .main-content{
+    width: 100%;
+    margin-top: 2rem;
+}
+.content-dua .wrapper .main-content a{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    font-size: 1.1rem;
+    height: 4rem;
+}
+.content-dua .wrapper .main-content a:hover{
+    text-decoration: underline;
+}
+
+/* content 3 */
+.content-tiga{
+    width: 100%;
+    background-color: var(--dark-2);
+    padding: 5rem 1rem;
+    color: var(--white);
+    text-align: center;
+}
+
+.content-tiga .wrapper{
+    max-width:680px ;
+    margin: 0 auto;
+}
+
+.content-tiga .wrapper h1{
+    font-size: 2.5rem;
+}
+.content-tiga .wrapper p{
+    font-size: 1rem;
+    margin: 2rem 0;
+}
+
+.content-tiga .wrapper button{
+    background-color: var(--green);
+    color: var(--black);
+}
+
+/* for tabs */
+@media (max-width: 780px) {
+    nav{
+        padding: 1rem;
+    }
+  .content-satu .header h1 {
+    font-size: 3rem;
+  }
+
+  .content-satu{
+    max-width: 100%;
+    padding: 2rem 1rem;
+  }
+
+  .content-satu .content{
+    height: max-content;
+  }
+}
+@media (max-width: 700px) {
+    .content-satu .content .content-card{
+        width: calc(100% /2 - .5rem);
+    }
+}
+
+
