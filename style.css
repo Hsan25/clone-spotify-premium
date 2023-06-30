@@ -451,7 +451,7 @@ footer .links-2 .links-content a{
   text-transform: capitalize;
 }
 footer .links-2 .links-content p{
-  font-size:  10px;
+  font-size:  12px;
   color: var(--gray);
   text-transform: capitalize;
 }
@@ -504,6 +504,7 @@ footer .links-2 .links-content.dua a:nth-child(1){
     transition: all 0.5s;
     padding-top: 4rem;
     z-index: 99;
+    top: 0;
   }
   
   .logo.hide{
@@ -784,5 +785,9 @@ footer .links-2 .links-content.dua a:nth-child(1){
   }
   footer .links-2 .links-content.dua{
     width:200px;
+  }
+
+  footer .links-2 .links-content p{
+    font-size: 10px;
   }
 }
