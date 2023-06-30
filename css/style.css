@@ -396,7 +396,7 @@ nav ul .close-menu {
     width: 40%;
     min-height: 100vh;
     padding: 2rem;
-    transition: all 0.5s;
+    transition: all 0.3s;
     padding-top: 4rem;
     z-index: 99;
     top: 0;

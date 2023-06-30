@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spotify-Download</title>
+    <!-- icons -->
+    <script src="https://unpkg.com/feather-icons"></script>
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cookie&family=Poppins:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;1,700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- my style -->
+    <link rel="stylesheet" href="../css/download.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/footer.css" />
+  </head>
+  <body>
+    <!-- nav start -->
+    <nav>
+      <!-- <i class="fa-solid fa-2x">&#xf1bc;</i> -->
+      <a href="" class="logo">
+        <span class="wrapper">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 496 512"
+            fill="white"
+          >
+            <path
+              d="M248 8C111.1 8 0 119.1 0 256s111.1 248 248 248 248-111.1 248-248S384.9 8 248 8zm100.7 364.9c-4.2 0-6.8-1.3-10.7-3.6-62.4-37.6-135-39.2-206.7-24.5-3.9 1-9 2.6-11.9 2.6-9.7 0-15.8-7.7-15.8-15.8 0-10.3 6.1-15.2 13.6-16.8 81.9-18.1 165.6-16.5 237 26.2 6.1 3.9 9.7 7.4 9.7 16.5s-7.1 15.4-15.2 15.4zm26.9-65.6c-5.2 0-8.7-2.3-12.3-4.2-62.5-37-155.7-51.9-238.6-29.4-4.8 1.3-7.4 2.6-11.9 2.6-10.7 0-19.4-8.7-19.4-19.4s5.2-17.8 15.5-20.7c27.8-7.8 56.2-13.6 97.8-13.6 64.9 0 127.6 16.1 177 45.5 8.1 4.8 11.3 11 11.3 19.7-.1 10.8-8.5 19.5-19.4 19.5zm31-76.2c-5.2 0-8.4-1.3-12.9-3.9-71.2-42.5-198.5-52.7-280.9-29.7-3.6 1-8.1 2.6-12.9 2.6-13.2 0-23.3-10.3-23.3-23.6 0-13.6 8.4-21.3 17.4-23.9 35.2-10.3 74.6-15.2 117.5-15.2 73 0 149.5 15.2 205.4 47.8 7.8 4.5 12.9 10.7 12.9 22.6 0 13.6-11 23.3-23.2 23.3z"
+            />
+          </svg>
+        </span>
+        <p>Spotify</p>
+      </a>
+
+      <div class="burger-menu">
+        <i data-feather="menu" color="white"></i>
+      </div>
+      <ul>
+        <div class="list-menu">
+          <a href="" class="close-menu">
+            <i data-feather="x"></i>
+          </a>
+          <li><a href="../index.html">Premium</a></li>
+          <li><a href="dukungan.html">Dukungan</a></li>
+          <li><a href="">Download</a></li>
+          <li><a href="" class="show-daftar size-1">Daftar</a></li>
+          <li><a href="" class="show-login size-1">Masuk</a></li>
+        </div>
+
+        <a href="" class="logo hide">
+          <span class="wrapper">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 496 512"
+              fill="white"
+            >
+              <path
+                d="M248 8C111.1 8 0 119.1 0 256s111.1 248 248 248 248-111.1 248-248S384.9 8 248 8zm100.7 364.9c-4.2 0-6.8-1.3-10.7-3.6-62.4-37.6-135-39.2-206.7-24.5-3.9 1-9 2.6-11.9 2.6-9.7 0-15.8-7.7-15.8-15.8 0-10.3 6.1-15.2 13.6-16.8 81.9-18.1 165.6-16.5 237 26.2 6.1 3.9 9.7 7.4 9.7 16.5s-7.1 15.4-15.2 15.4zm26.9-65.6c-5.2 0-8.7-2.3-12.3-4.2-62.5-37-155.7-51.9-238.6-29.4-4.8 1.3-7.4 2.6-11.9 2.6-10.7 0-19.4-8.7-19.4-19.4s5.2-17.8 15.5-20.7c27.8-7.8 56.2-13.6 97.8-13.6 64.9 0 127.6 16.1 177 45.5 8.1 4.8 11.3 11 11.3 19.7-.1 10.8-8.5 19.5-19.4 19.5zm31-76.2c-5.2 0-8.4-1.3-12.9-3.9-71.2-42.5-198.5-52.7-280.9-29.7-3.6 1-8.1 2.6-12.9 2.6-13.2 0-23.3-10.3-23.3-23.6 0-13.6 8.4-21.3 17.4-23.9 35.2-10.3 74.6-15.2 117.5-15.2 73 0 149.5 15.2 205.4 47.8 7.8 4.5 12.9 10.7 12.9 22.6 0 13.6-11 23.3-23.2 23.3z"
+              />
+            </svg>
+          </span>
+          <p>Spotify</p>
+        </a>
+      </ul>
+    </nav>
+    <!-- nav end -->
+
+    <!-- content - 1 start -->
+    <section class="content-satu">
+      <div class="wrapper">
+        <div class="komputer">
+          <img
+            src="https://www-growth.scdn.co/static/download/laptop.svg"
+            alt=""
+            width="100%"
+          />
+          <img
+            src="https://www-growth.scdn.co/static/download/green-circle.svg"
+            alt=""
+            class="circle"
+          />
+          <img
+            src="https://www-growth.scdn.co/static/download/green-success-check.svg"
+            alt=""
+            class="check"
+          />
+        </div>
+        <h3>Download Spotify</h3>
+        <p>Putar jutaan lagu dan podcast di perangkat kamu.</p>
+        <button class="btn btn-primary">Download</button>
+      </div>
+    </section>
+    <!-- content - 1 end-->
+
+    <!-- content 2 start -->
+    <section class="content-dua">
+      <div class="wrapper">
+        <h3>Bawa juga musik kamu ke ponsel dan tablet.</h3>
+        <p>
+          Mendengarkan di HP atau tablet kamu gratis, mudah, dan menyenangkan.
+        </p>
+        <div class="logo">
+          <a href="https://spotify.link/h5TbcGLLkhb?label=sp_cid%3Ad70bf0954aeef5a2651ac8702e696c5f" target="_blank">
+            <img
+              src="https://www-growth.scdn.co/static/badges/svgs/apple/badge-id.svg"
+              alt=""
+            />
+          </a>
+          <a href="https://spotify.link/T1vKH6Kr9ib?label=sp_cid%3Ad70bf0954aeef5a2651ac8702e696c5f" target="_blank">
+            <img
+              src="https://www-growth.scdn.co/static/badges/svgs/google/badge-id.svg"
+              alt=""
+              height="57px"
+            />
+          </a>
+          <a href="https://www.microsoft.com/store/p/spotify-music/9ncbcszsjrsb?cid=spotifyweb-windows10-store-direct" target="_blank">
+            <img
+              src="https://www-growth.scdn.co/static/badges/microsoft-windows/id.png"
+              alt=""
+            />
+          </a>
+        </div>
+      </div>
+    </section>
+    <!-- content 2 end -->
+
+    <!-- content 3 start -->
+    <section class="content-tiga">
+      <div class="wrapper">
+        <img
+          src="https://www-growth.scdn.co/static/download/all-devices.svg"
+          alt=""
+        />
+        <h1>Satu akun, dengarkan di mana saja.</h1>
+        <ul>
+          <li><span>seluler</span></li>
+          <li><span>komputer</span></li>
+          <li><span>tablet</span></li>
+          <li><a href="" class="t-under">mobile</a></li>
+          <li><a href="" class="t-under">PLAYSTATION®</a></li>
+          <li><a href="" class="t-under">xbox</a></li>
+          <li><a href="" class="t-under">tv</a></li>
+          <li><a href="" class="t-under">speaker</a></li>
+          <li><a href="" class="t-under">pemutar web</a></li>
+        </ul>
+      </div>
+    </section>
+    <!-- content 3 end -->
+
+        <!-- footer start -->
+        <footer>
+            <div class="links">
+              <a href="" class="logo">
+                <span class="wrapper">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 496 512"
+                    fill="white"
+                  >
+                    <path
+                      d="M248 8C111.1 8 0 119.1 0 256s111.1 248 248 248 248-111.1 248-248S384.9 8 248 8zm100.7 364.9c-4.2 0-6.8-1.3-10.7-3.6-62.4-37.6-135-39.2-206.7-24.5-3.9 1-9 2.6-11.9 2.6-9.7 0-15.8-7.7-15.8-15.8 0-10.3 6.1-15.2 13.6-16.8 81.9-18.1 165.6-16.5 237 26.2 6.1 3.9 9.7 7.4 9.7 16.5s-7.1 15.4-15.2 15.4zm26.9-65.6c-5.2 0-8.7-2.3-12.3-4.2-62.5-37-155.7-51.9-238.6-29.4-4.8 1.3-7.4 2.6-11.9 2.6-10.7 0-19.4-8.7-19.4-19.4s5.2-17.8 15.5-20.7c27.8-7.8 56.2-13.6 97.8-13.6 64.9 0 127.6 16.1 177 45.5 8.1 4.8 11.3 11 11.3 19.7-.1 10.8-8.5 19.5-19.4 19.5zm31-76.2c-5.2 0-8.4-1.3-12.9-3.9-71.2-42.5-198.5-52.7-280.9-29.7-3.6 1-8.1 2.6-12.9 2.6-13.2 0-23.3-10.3-23.3-23.6 0-13.6 8.4-21.3 17.4-23.9 35.2-10.3 74.6-15.2 117.5-15.2 73 0 149.5 15.2 205.4 47.8 7.8 4.5 12.9 10.7 12.9 22.6 0 13.6-11 23.3-23.2 23.3z"
+                    />
+                  </svg>
+                </span>
+                <p>Spotify</p>
+              </a>
+              <div class="links-all">
+                <div class="links-perusahaan">
+                  <p class="sub-title">Perusahaan</p>
+                  <a href="">Tentang </a>
+                  <a href="">Pekerjaan</a>
+                  <a href="">For The Record</a>
+                </div>
+                <div class="links-komunitas">
+                  <p class="sub-title">Komunitas</p>
+                  <a href="">Untuk Artis </a>
+                  <a href="">Pengembang</a>
+                  <a href="">Iklan</a>
+                  <a href="">Investor</a>
+                  <a href="">Vendor</a>
+                  <a href="">Spotify for Work</a>
+                </div>
+                <div class="links-komunitas">
+                  <p class="sub-title">Tautan berguna</p>
+                  <a href="">Dukungan</a>
+                  <a href="">Pemutar Web</a>
+                  <a href="">Aplikasi Seluler Gratis</a>
+                </div>
+              </div>
+              <div class="links-social">
+                <a href=""> <i data-feather="instagram"></i></a>
+                <a href=""> <i data-feather="twitter"></i></a>
+                <a href=""> <i data-feather="facebook"></i></a>
+              </div>
+            </div>
+            <div class="links-2">
+              <div class="links-content">
+                <a href="">Hukum</a>
+                <a href="">Pusat privasi</a>
+                <a href="">Kebijakn privasi</a>
+                <a href="">Cookie</a>
+                <a href="">Tentang iklan</a>
+                <a href="">Aksebilitas</a>
+              </div>
+              <div class="links-content dua">
+                <a href=""
+                  ><i data-feather="globe" style="transform: scale(0.7)"></i>
+                  Indonesia</a
+                >
+                <p>© 2023 Spotify AB</p>
+              </div>
+            </div>
+          </footer>
+          <!-- footer end -->
+
+
+
+
+
+
+
+
+    <!-- icons -->
+    <script
+      src="https://kit.fontawesome.com/2bde07316f.js"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      feather.replace();
+    </script>
+
+    <!-- my script -->
+    <script src="../script/download.js"></script>
+  </body>
+</html>
