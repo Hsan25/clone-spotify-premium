@@ -1,0 +1,319 @@
+:root {
+  --black: #000000;
+  --dark: #222326;
+  --dark-2: #121212;
+  --blue: #1d75de;
+  --green: #1ed760;
+  --white: #fff;
+  --gray: #878787;
+  --gray-1: #2a2a2a;
+  --white-2: #eeeeee;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: none;
+  outline: none;
+}
+
+body,
+input,
+button {
+  font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
+}
+
+.container {
+  width: 100%;
+  background-color: var(--dark-2);
+  padding: 5rem 0;
+  box-shadow:  -1px -100px 140px 100px var(--black) inset;
+}
+
+.container h1 {
+  font-size: 2.5rem;
+  text-align: center;
+  color: var(--white);
+}
+
+.container .wrapper {
+  width: 100%;
+  max-width: 732px;
+  padding: 4rem 1rem;
+  background-color: var(--black);
+  margin: 0 auto;
+  height: 100%;
+}
+
+/* .container .wrapper:after{
+    content: '';
+    width: 100%;
+    height: 100%;
+
+} */
+
+
+.container .content-1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: inherit;
+  gap: 1rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  width: 80%;
+  margin: 0 auto;
+}
+
+.btn-transparent {
+  max-width: 20rem;
+  width: 100%;
+  padding: 0.5rem 1rem;
+  display: flex;
+  justify-content: center;
+  background-color: transparent;
+  color: var(--white);
+  cursor: pointer;
+  gap: 0.5rem;
+  border-radius: 24px;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  font-size: 15px;
+}
+
+.btn-transparent:hover {
+  border: 1px solid rgba(255, 255, 255);
+}
+
+.wrapper .content-2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: inherit;
+  gap: 4rem;
+  padding: 5rem 0 0;
+  position: relative;
+}
+
+.wrapper .content-2 .box-input {
+  max-width: 20rem;
+  width: 100%;
+  height: 3.2rem;
+  max-height: max-content;
+  background-color: var(--dark-2);
+  padding: 0.5rem 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  border-radius: 5px;
+  z-index: 9;
+}
+
+.wrapper .content-2 .box-input:before {
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -1;
+  border-radius: 5px;
+}
+
+.wrapper .content-2 .box-input.error:before {
+  border: 1px solid red;
+}
+
+.wrapper .content-2 .box-input:focus-within:before {
+  box-shadow: 0 0 0 2px rgba(255, 255, 255);
+}
+.wrapper .content-2 .box-input.error:focus-within:before {
+  box-shadow: 0 0 0 2px red;
+}
+
+.wrapper .content-2 .box-input span:nth-child(1) {
+  position: absolute;
+  color: var(--white);
+  left: 0;
+  top: -2rem;
+  font-size: 14px;
+}
+
+.wrapper .content-2 .box-input input {
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  color: var(--white);
+  font-size: 15px;
+}
+
+.wrapper .content-2 .box-input .show-password {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+}
+.wrapper .content-2 .box-input .show-password .eye {
+  width: 100%;
+  height: 100%;
+}
+
+.wrapper .content-2 .box-input .error-message {
+  color: red;
+  font-size: 12px;
+  position: absolute;
+  left: 0;
+  bottom: -3.2rem;
+  display: flex;
+  gap: 0.5rem;
+  display: none;
+}
+
+.wrapper .content-2 .box-input .error-message.active {
+  display: flex;
+}
+
+/* for checkbox */
+.box-container {
+  max-width: 20rem;
+  width: 100%;
+  position: relative;
+  margin-top: -30px;
+  padding: .1rem;
+}
+
+.box-check {
+  width: 40px;
+  height: 20px;
+  border-radius: 10px;
+  background-color: var(--gray);
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  cursor: pointer;
+}
+
+.box-check input {
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+}
+
+
+
+.box-check .bg {
+  display: inline-block;
+  width: 0;
+  height: 100%;
+  background-color: var(--green);
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 10px;
+  transition: all 10ms;
+  overflow: hidden;
+}
+
+.box-check input:checked ~ .bg{
+    width: 100%;
+}
+
+.box-check input:checked ~ .ball{
+    left: 55%;
+}
+
+
+.box-check .ball {
+  position: absolute;
+  top: 50%;
+  left: 5px;
+  transform: translateY(-50%);
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: var(--black);
+  transition: all 50ms;
+}
+.box-check .text{
+    color: var(--white);
+    min-width:max-content;
+    position: absolute;
+    right: -100px;
+    font-size: 13px;
+    user-select: none;
+}
+
+.content-2 .btn{
+    background-color: var(--green);
+    max-width: 20rem;
+    width: 100%;
+    color: var(--black);
+    text-transform: capitalize;
+}
+
+
+.content-2 > span{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: .3rem;
+    margin-top: -1rem;
+    position: relative;
+}
+.content-2 > span:before{
+    content: '';
+    width: 560px;
+    /* max-width: 100%; */
+    border-top: 1px solid rgba(255,255,255,.2);
+    position: absolute;
+    top: -1rem;
+}
+
+.content-2 > span p{
+    color: var(--gray);
+    font-size: 15px;
+
+}
+.content-2 > span a{
+    font-size: 14px;
+    text-decoration: underline;
+    
+}
+.content-2 > a{
+    margin-top: -2rem;
+    font-size: 15px;
+    text-decoration: underline;
+}
+.content-2 > a:hover,
+.content-2 > span a:hover{
+    color: var(--green);
+}
+
+
+
+/* for tabs */
+
+@media (max-width: 780px) {
+  .container {
+    padding: 0;
+  }
+  .btn-transparent {
+    max-width: 100%;
+  }
+
+  .content-2 > span:before{
+    border: none;
+  }
+
+  .wrapper .content-2 .box-input,
+  .box-container,
+  .content-2 .btn {
+    min-width: 80%;
+  }
+}
