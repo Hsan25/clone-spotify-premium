@@ -61,7 +61,8 @@ li {
   border: 2px solid white;
 }
 
-.btn:hover {
+.btn:hover,
+.btn-primary:hover {
   transform: scale(1.07);
 }
 
