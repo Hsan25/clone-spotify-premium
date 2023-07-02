@@ -10,6 +10,9 @@
   --white-2: #eeeeee;
 }
 
+html{
+    -webkit-tap-highlight-color: transparent;
+}
 * {
   margin: 0;
   padding: 0;
